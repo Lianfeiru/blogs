@@ -4,6 +4,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "justfu-NoteHub",
   description: "A VitePress Site",
+  // 基础路径
+  base: '/blogs/', // 替换为你的仓库名称
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
