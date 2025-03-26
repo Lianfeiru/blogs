@@ -22,7 +22,6 @@
         navigate: (link) => {
             if (link) {
                 const fullPath = `${base}${link.replace(/^\//, '')}`; // 拼接 base 和 link
-                debugger
                 router.go(fullPath); // 使用 router.go 方法跳转
             }
         },
