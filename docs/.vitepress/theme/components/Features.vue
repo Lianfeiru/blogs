@@ -34,19 +34,21 @@
   <style scoped>
   .features {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap:20px;
   }
   
-  .feature-item {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
+.feature-item {
+  background-color: var(--background-color);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
   
-  .feature-item:hover {
-    transform: scale(1.05);
-  }
+ .feature-item:hover {
+   transform: scale(1.05);
+}
   </style>

@@ -157,5 +157,5 @@ export default defineConfig({
         link: '/harmonyOS-development/introduction',
       },
     ],
-  }
+  },
 })
