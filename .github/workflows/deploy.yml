@@ -52,6 +52,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
+      - name: List build directory contents
+        run: ls -R ./public
 
   # 部署工作
   deploy:
